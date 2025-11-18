@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer components {
+  .custom-grid {
+    @apply grid grid-cols-3 gap-4;
+  }
+  
+  .roboto-font {
+    font-family: "Roboto", sans-serif;
+  }
+}
