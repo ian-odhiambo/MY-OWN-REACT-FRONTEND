@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar />
 
-      <Hero title="John Wick website" />
+      <Hero title="John Wick website" subtitle ="Find a job in mercy killing"/>
 
     
       
