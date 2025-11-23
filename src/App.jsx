@@ -1,37 +1,21 @@
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 import "./index.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import HomeCards from "./components/HomeCards"
-import JobListings from "./components/JobListings"
+
+import HomePage from "./PAGES/HomePage";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route  index element={<HomePage/>} />
+  )
+);
 
 function App() {
-  
-
-  return (
-    <>
-      <Navbar />
-
-      <Hero title="John Wick website" subtitle ="Find a job in mercy killing"/>
-
-    
-      
-      {/* Developer and Explorers */}
-
-      <HomeCards  />
-
-      {/* browse Jobs */}
-     
-      < JobListings />
-      <section className="m-auto max-w-lg my-10 px-6">
-        <a
-          href="job.html"
-          className="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-900"
-        >
-          view All jobs
-        </a>
-      </section>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
@@ -68,3 +52,29 @@ export default App;
 // <>
 //   )
 // }
+
+// THIS IS THE COMPONENTS BEING RENDERED,ya kushikilia page,
+{
+  /* <Navbar />
+
+      <Hero title="John Wick website" subtitle="Find a job in mercy killing" /> */
+}
+
+{
+  /* Developer and Explorers */
+}
+
+{
+  /* <HomeCards /> */
+}
+
+{
+  /* browse Jobs */
+}
+
+{
+  /* <JobListings />
+      <ViewAllJobs /> */
+}
+
+

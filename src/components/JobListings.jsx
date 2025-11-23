@@ -6,14 +6,18 @@ const JobListings = () => {
   // console.log(jobs); , an array of jobs 
 
   //The beginning index of the specified portion of the array. If start is undefined, then the slice begins at index 0.
-  const recentJobsListings =jobs.slice(0, 4)
+  const recentJobsListings =jobs.slice(0, 4)// ill apply this method after assigning job to a container , and the value job ,have it like the number of 
   return (
     <section className="bg-blue-300 px-4 py-10">
+
       <div className="container-xl lg:container m-auto">
         <h1 className="text-xl text-blue-700 text-center font-bold">
           Browse Jobs
         </h1>
       </div>
+
+
+
 
       {/*main-container*/}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -90,4 +94,4 @@ export default JobListings;
 
 
 //talked of an extension called React icons to bring on board the font awesome icons for the i tags within this page.
-// Now we have decided to take the items at each index, for the job listing cards specifically the one we had chosen to be within our high order array method(map) parenthesis. we take that XML for job-listing cards UI within the parenthesis of our method and create a separate component for it and then where we shall pass it as a prop on to the function and then come back to the same parenthesis of our high array method where we had that which is now a separate component to be used for each joblisting cards, we must import it and have its tag within, you know the usual drill 
+// Now we have decided to take the items at each index, for the job listing cards specifically the one we had chosen to be within our high order array method(map) parenthesis. we take that XML for job-listing cards UI within the parenthesis of our method and create a separate component for it and then where we shall pass it as a prop on to the function and then come back to the same parenthesis of our high array method where we had that which is now a separate component to be used for each joblisting cards, we must import it and have its embedded,within our main job listings which is the mother component, you know the usual drill 
