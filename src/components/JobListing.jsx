@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import { useState } from "react";
 import { FaMapMarker } from "react-icons/fa";//this is a new update on this named import from the react-icon packages for icons,i see now youd have to specify what is inside the parenthesis 
 
@@ -34,12 +35,12 @@ const JobListing = ({ job }) => {
             <FaMapMarker className="inline text-lg mb-1 mr-1" />
             {job.location}
           </div>
-          <a
-            href="job.html"
+          <Link
+            to="job"
             className="h-[36px] bg-indigo-700 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </div>

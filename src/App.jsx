@@ -7,10 +7,17 @@ import {
 import "./index.css";
 
 import HomePage from "./PAGES/HomePage";
+import MainLayOut from "./LAYOUT/MainLayOut";
+import JobsPage from "./PAGES/JobsPage";
+import NotFoundPage from "./PAGES/NotFoundPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route  index element={<HomePage/>} />
+    <Route path="/" element={<MainLayOut />}>
+      <Route index element={<HomePage />} />
+      <Route path="/jobs" element={<JobsPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Route>
   )
 );
 
@@ -19,6 +26,7 @@ function App() {
 }
 
 export default App;
+
 
 // import React from "react";
 // import { Linter } from "eslint";
@@ -52,6 +60,8 @@ export default App;
 // <>
 //   )
 // }
+
+
 
 // THIS IS THE COMPONENTS BEING RENDERED,ya kushikilia page,
 {
